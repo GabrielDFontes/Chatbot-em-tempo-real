@@ -49,33 +49,3 @@ if mensagem_usuario:
     st.chat_message("assistant").write(resposta_ia)
     mensagem_ia = {"role": "assistant", "content": resposta_ia}
     st.session_state["lista_mensagens"].append(mensagem_ia)
-
-# # listas
-# nomes = ["Lira", "Gui", "Thalia", "Michely"]
-# print(nomes[0])
-# nomes.append("Alon") # adicionar 
-
-# print(nomes)
-
-# # dicionarios
-# idades = {"Lira": 31, "Alon": 30, "Thalia": 25}
-# idades["Michely"] = 27 # adicionar 
-# print(idades)
-
-# texto_usuario = "Coe galera"
-# mensagem = {"usuario": "Lira", "texto": texto_usuario}
-# usuario = mensagem["usuario"] # pegar info: dicionario[chave]
-# print(mensagem)
-# print(usuario)
-
-# # listas + dicionarios
-# lista_mensagens = [
-#     {"role": "Lira", "content": texto_usuario}, 
-#     {"role": "IA", "content": texto_usuario}, 
-#     {"role": "Lira", "content": texto_usuario}
-#     ]
-
-# nova_mensagem = {"role": "Lira", "content": "Resposta do Lira"}
-
-# lista_mensagens.append(nova_mensagem)
-# print(lista_mensagens)
